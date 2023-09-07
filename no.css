@@ -1,0 +1,67 @@
+body, h1, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #444;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns */
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 20px;
+}
+
+.item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Example media query for screens narrower than 768px */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Two columns */
+        grid-gap: 10px; /* Reduced gap */
+    }
+}
